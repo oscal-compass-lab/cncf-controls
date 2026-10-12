@@ -35,25 +35,20 @@ def load_groups(catalog_path: Path) -> list[dict]:
     return groups
 
 
+BAR_WIDTH = 30  # max Unicode bar width in characters
+
+
 def build_chart(groups: list[dict]) -> str:
-    titles = [g["title"] for g in groups]
     counts = [len(g["controls"]) for g in groups]
     max_count = max(counts)
-    # round up to next multiple of 5 for a clean y-axis ceiling
-    ceiling = max_count + (5 - max_count % 5) % 5
 
-    x_items = ", ".join(f'"{t}"' for t in titles)
-    bars = ", ".join(str(c) for c in counts)
+    rows = ["| Group | Controls | |", "|---|:---:|---|"]
+    for g, count in zip(groups, counts):
+        filled = round(count / max_count * BAR_WIDTH)
+        bar = "█" * filled + "░" * (BAR_WIDTH - filled)
+        rows.append(f"| {g['title']} | {count} | `{bar}` |")
 
-    return (
-        "```mermaid\n"
-        "xychart-beta\n"
-        '    title "Controls per Group"\n'
-        f"    x-axis [{x_items}]\n"
-        f'    y-axis "Controls" 0 --> {ceiling}\n'
-        f"    bar [{bars}]\n"
-        "```"
-    )
+    return "\n".join(rows)
 
 
 def build_table(groups: list[dict]) -> str:
