@@ -9,19 +9,7 @@ Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cnc
 
 <!-- chart-start -->
 
-| Group | Controls | |
-|---|:---:|---|
-| Access Control | 22 | `████████████████░░░░░░░░░░░░░░` |
-| Compute | 36 | `███████████████████████████░░░` |
-| Deploy | 9 | `███████░░░░░░░░░░░░░░░░░░░░░░░` |
-| Develop | 20 | `███████████████░░░░░░░░░░░░░░░` |
-| Distribute | 40 | `██████████████████████████████` |
-| Securing Artefacts | 8 | `██████░░░░░░░░░░░░░░░░░░░░░░░░` |
-| Securing Build Pipelines | 21 | `████████████████░░░░░░░░░░░░░░` |
-| Securing Materials | 9 | `███████░░░░░░░░░░░░░░░░░░░░░░░` |
-| Securing the Source Code | 13 | `██████████░░░░░░░░░░░░░░░░░░░░` |
-| Security Assurance | 22 | `████████████████░░░░░░░░░░░░░░` |
-| Storage | 14 | `██████████░░░░░░░░░░░░░░░░░░░░` |
+![Controls per Group](docs/catalog-chart.png)
 
 <!-- chart-end -->
 
