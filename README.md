@@ -10,7 +10,7 @@ Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cnc
 <!-- chart-start -->
 
 ```mermaid
-xychart-beta horizontal
+xychart-beta
     title "Controls per Group"
     x-axis ["Access Control", "Compute", "Deploy", "Develop", "Distribute", "Securing Artefacts", "Securing Build Pipelines", "Securing Materials", "Securing the Source Code", "Security Assurance", "Storage"]
     y-axis "Controls" 0 --> 40

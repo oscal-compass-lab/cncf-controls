@@ -47,7 +47,7 @@ def build_chart(groups: list[dict]) -> str:
 
     return (
         "```mermaid\n"
-        "xychart-beta horizontal\n"
+        "xychart-beta\n"
         '    title "Controls per Group"\n'
         f"    x-axis [{x_items}]\n"
         f'    y-axis "Controls" 0 --> {ceiling}\n'
