@@ -12,19 +12,7 @@ Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cnc
 ```mermaid
 xychart-beta horizontal
     title "Controls per Group"
-    x-axis [
-        "Access Control"
-        "Compute"
-        "Deploy"
-        "Develop"
-        "Distribute"
-        "Securing Artefacts"
-        "Securing Build Pipelines"
-        "Securing Materials"
-        "Securing the Source Code"
-        "Security Assurance"
-        "Storage"
-    ]
+    x-axis ["Access Control", "Compute", "Deploy", "Develop", "Distribute", "Securing Artefacts", "Securing Build Pipelines", "Securing Materials", "Securing the Source Code", "Security Assurance", "Storage"]
     y-axis "Controls" 0 --> 40
     bar [22, 36, 9, 20, 40, 8, 21, 9, 13, 22, 14]
 ```

@@ -42,16 +42,14 @@ def build_chart(groups: list[dict]) -> str:
     # round up to next multiple of 5 for a clean y-axis ceiling
     ceiling = max_count + (5 - max_count % 5) % 5
 
-    x_items = "\n".join(f'        "{t}"' for t in titles)
+    x_items = ", ".join(f'"{t}"' for t in titles)
     bars = ", ".join(str(c) for c in counts)
 
     return (
         "```mermaid\n"
         "xychart-beta horizontal\n"
         '    title "Controls per Group"\n'
-        "    x-axis [\n"
-        f"{x_items}\n"
-        "    ]\n"
+        f"    x-axis [{x_items}]\n"
         f'    y-axis "Controls" 0 --> {ceiling}\n'
         f"    bar [{bars}]\n"
         "```"
