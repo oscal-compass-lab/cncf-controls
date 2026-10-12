@@ -1,0 +1,326 @@
+{
+  "profile": {
+    "uuid": "a0bef1a8-0b4c-4ed9-b78e-2dbeb9e6961a",
+    "metadata": {
+      "title": "CNCF Source Repository Profile",
+      "last-modified": "2026-10-12T14:10:04.742+00:00",
+      "version": "1.0",
+      "oscal-version": "1.2.1",
+      "props": [
+        {
+          "name": "description",
+          "value": "Generic profile selecting CNCF controls applicable to any source code repository. Excludes runtime, infrastructure, and deployment pipeline controls that cannot be assessed at the repo level."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "d82d89c9-a20d-4931-bc8f-5cfcf0ae782b",
+          "type": "organization",
+          "name": "CNCF TAG Security and Compliance"
+        }
+      ]
+    },
+    "imports": [
+      {
+        "href": "trestle://catalogs/cncf-controls/catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "CNSC-65"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-67"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-68"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-69"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-71"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-72"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-73"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-74"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-75"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-78"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-195"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-259"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-265"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-82"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-85"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-150"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-152"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-153"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-154"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-155"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-156"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-158"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-159"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-165"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-166"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-167"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-168"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-173"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-174"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-175"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-177"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-178"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-179"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-180"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-181"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-182"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-183"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-184"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-185"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-186"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-187"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-188"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-189"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-190"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-191"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-192"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-193"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-194"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-121"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-196"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-197"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-198"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-199"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-200"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-201"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-202"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-203"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-204"
+            ]
+          },
+          {
+            "with-ids": [
+              "CNSC-205"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

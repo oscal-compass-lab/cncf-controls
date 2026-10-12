@@ -24,7 +24,7 @@ CNCF_YAML_FILES := \
 
 CNCF_YAML_TARGETS := $(addprefix $(DOWNLOAD_DIR)/,$(CNCF_YAML_FILES))
 
-.PHONY: venv install download-cncf-yaml clean-cncf-yaml clean-venv trestle-init clean-trestle build-catalog clean-catalog validate-catalog update-readme all
+.PHONY: venv install download-cncf-yaml clean-cncf-yaml clean-venv trestle-init clean-trestle build-catalog clean-catalog validate-catalog build-profile validate-profile update-readme all
 
 ## venv: Create a Python virtual environment and install requirements.txt
 venv: $(VENV_DIR)/bin/activate
@@ -73,8 +73,16 @@ clean-catalog:
 validate-catalog: build-catalog
 	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type catalog --name cncf-controls
 
+## build-profile: Build the generic cncf-repo OSCAL profile
+build-profile: build-catalog
+	$(VENV_DIR)/bin/python scripts/build_profile.py --trestle-ws $(TRESTLE_WS)
+
+## validate-profile: Validate the cncf-repo profile with trestle
+validate-profile: build-profile
+	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type profile --name cncf-repo
+
 ## update-readme: Regenerate the Mermaid chart and controls table in README.md
-update-readme: validate-catalog
+update-readme: validate-profile
 	$(VENV_DIR)/bin/python scripts/update_readme.py --catalog $(TRESTLE_WS)/catalogs/cncf-controls/catalog.json --readme README.md
 
 ## all: Run all steps — download, build catalog, validate, update README
