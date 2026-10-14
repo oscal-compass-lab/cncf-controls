@@ -1,0 +1,1049 @@
+{
+  "system-security-plan": {
+    "uuid": "c0e4d064-bb5e-4473-b419-b00efcc2bd79",
+    "metadata": {
+      "title": "System Security Plan — oscal-compass-lab/cncf-controls",
+      "last-modified": "2026-10-12T14:54:30.745+00:00",
+      "version": "1.0",
+      "oscal-version": "1.2.1",
+      "parties": [
+        {
+          "uuid": "6af15353-019c-4850-ac7f-938cc4560da9",
+          "type": "organization",
+          "name": "oscal-compass-lab/cncf-controls",
+          "links": [
+            {
+              "href": "https://github.com/oscal-compass-lab/cncf-controls.git",
+              "rel": "canonical"
+            }
+          ]
+        }
+      ]
+    },
+    "import-profile": {
+      "href": "trestle://profiles/cncf-repo/profile.json"
+    },
+    "system-characteristics": {
+      "system-ids": [
+        {
+          "identifier-type": "https://github.com/",
+          "id": "https://github.com/oscal-compass-lab/cncf-controls.git"
+        }
+      ],
+      "system-name": "oscal-compass-lab/cncf-controls",
+      "description": "Source code repository at https://github.com/oscal-compass-lab/cncf-controls.git. Assessed against the CNCF cncf-repo profile.",
+      "system-information": {
+        "information-types": [
+          {
+            "uuid": "11d713cf-8f69-451c-ad08-6e4c6ed16a9e",
+            "title": "Source Code and Build Artifacts",
+            "description": "Source code, scripts, configuration files, dependency declarations, and generated OSCAL artifacts."
+          }
+        ]
+      },
+      "status": {
+        "state": "operational"
+      },
+      "authorization-boundary": {
+        "description": "The authorization boundary is the source code repository itself, including its build pipeline, dependency declarations, branch protection settings, and committed artifacts."
+      }
+    },
+    "system-implementation": {
+      "users": [
+        {
+          "uuid": "39918725-e97d-46c3-b934-f4b1e9ba6d0a",
+          "title": "Repository Contributor",
+          "short-name": "contributor",
+          "description": "Developer with commit access to the repository.",
+          "role-ids": [
+            "developer"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+          "type": "software",
+          "title": "CNCF Source Repository",
+          "description": "Source repository: https://github.com/oscal-compass-lab/cncf-controls.git",
+          "links": [
+            {
+              "href": "https://github.com/oscal-compass-lab/cncf-controls.git",
+              "rel": "reference"
+            }
+          ],
+          "status": {
+            "state": "operational"
+          }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "Implementation of cncf-repo profile controls. Parameter values are specific to this repository.",
+      "implemented-requirements": [
+        {
+          "uuid": "281dc21c-0248-487d-9028-5db1dce19995",
+          "control-id": "CNSC-65",
+          "set-parameters": [
+            {
+              "param-id": "pipeline-vuln-scan-target",
+              "values": [
+                "audit-deps"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "c2d95953-20d4-489f-bc6b-739e161ee746",
+              "description": "Repository component implements CNSC-65."
+            }
+          ],
+          "remarks": "Implementation of CNSC-65 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "fa847729-1745-4ffa-83d3-b067d23e3985",
+          "control-id": "CNSC-67",
+          "set-parameters": [
+            {
+              "param-id": "test-dir",
+              "values": [
+                "tests"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "a9c0a844-348d-453a-beae-f6da2e631681",
+              "description": "Repository component implements CNSC-67."
+            }
+          ],
+          "remarks": "Implementation of CNSC-67 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "314838c1-6e00-4530-a9ea-ffc142d6918e",
+          "control-id": "CNSC-68",
+          "set-parameters": [
+            {
+              "param-id": "test-dir",
+              "values": [
+                "tests"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "8ea23cb2-f231-40d5-9ff5-aa2138459eb6",
+              "description": "Repository component implements CNSC-68."
+            }
+          ],
+          "remarks": "Implementation of CNSC-68 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "f3b73752-743f-4c91-be00-b6c25a689711",
+          "control-id": "CNSC-69",
+          "set-parameters": [
+            {
+              "param-id": "test-target",
+              "values": [
+                "test"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "69c04010-0717-4171-a761-479499f66133",
+              "description": "Repository component implements CNSC-69."
+            }
+          ],
+          "remarks": "Implementation of CNSC-69 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "05019e2e-a411-414c-a736-1b00bb7d621b",
+          "control-id": "CNSC-71",
+          "set-parameters": [
+            {
+              "param-id": "default-branch",
+              "values": [
+                "main"
+              ]
+            },
+            {
+              "param-id": "min-reviewers",
+              "values": [
+                "1"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "586ab347-380e-458e-a47b-cc31e4b4c14f",
+              "description": "Repository component implements CNSC-71."
+            }
+          ],
+          "remarks": "Implementation of CNSC-71 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "4426b923-7378-4081-be2e-1c5bed11ebca",
+          "control-id": "CNSC-72",
+          "set-parameters": [
+            {
+              "param-id": "pipeline-file",
+              "values": [
+                "Makefile"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "1ab3b0e2-a91b-4160-9e5e-3ba876ef53d5",
+              "description": "Repository component implements CNSC-72."
+            }
+          ],
+          "remarks": "Implementation of CNSC-72 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "d3f4fe21-923f-43aa-aa4e-ed1a48cd25b7",
+          "control-id": "CNSC-73",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "5b5b2264-825c-4305-9b83-db500a02bf01",
+              "description": "Repository component implements CNSC-73."
+            }
+          ],
+          "remarks": "Implementation of CNSC-73 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "c288279f-af53-4300-8404-efa6e89bdd15",
+          "control-id": "CNSC-74",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "e4180ccd-d322-4c7a-9364-0fd01249053c",
+              "description": "Repository component implements CNSC-74."
+            }
+          ],
+          "remarks": "Implementation of CNSC-74 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "cde889e0-a4f8-4096-944d-881682c1dc51",
+          "control-id": "CNSC-75",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "12e7c83d-a55b-4d5b-8114-bb765980df0c",
+              "description": "Repository component implements CNSC-75."
+            }
+          ],
+          "remarks": "Implementation of CNSC-75 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "f7eccce5-b491-47bf-bff8-b20a8c155233",
+          "control-id": "CNSC-78",
+          "set-parameters": [
+            {
+              "param-id": "threat-model-file",
+              "values": [
+                "THREAT_MODEL.md"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "84093446-a559-43b7-8cfc-4541104e70e9",
+              "description": "Repository component implements CNSC-78."
+            }
+          ],
+          "remarks": "Implementation of CNSC-78 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "8cde69d0-db12-4322-bdab-8638a974aed2",
+          "control-id": "CNSC-195",
+          "set-parameters": [
+            {
+              "param-id": "security-policy-file",
+              "values": [
+                "SECURITY.md"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "f1cb78fb-768b-479b-91b1-349d61468546",
+              "description": "Repository component implements CNSC-195."
+            }
+          ],
+          "remarks": "Implementation of CNSC-195 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "17477c47-d4f9-4224-a899-2e81ef642963",
+          "control-id": "CNSC-259",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "f3baa67b-4166-4d2e-9aae-be5e355ca927",
+              "description": "Repository component implements CNSC-259."
+            }
+          ],
+          "remarks": "Implementation of CNSC-259 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "8cb230e9-5f95-4f30-9335-b6a57461825e",
+          "control-id": "CNSC-265",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "c596d010-66e2-4b16-a149-170193558ad0",
+              "description": "Repository component implements CNSC-265."
+            }
+          ],
+          "remarks": "Implementation of CNSC-265 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "998244bb-d732-4b19-b442-c7c1d749b1f3",
+          "control-id": "CNSC-82",
+          "set-parameters": [
+            {
+              "param-id": "sast-target",
+              "values": [
+                "sast"
+              ]
+            },
+            {
+              "param-id": "sast-tool",
+              "values": [
+                "bandit"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "dfb8ce78-b524-43e9-ab70-4d1fbe87530d",
+              "description": "Repository component implements CNSC-82."
+            }
+          ],
+          "remarks": "Implementation of CNSC-82 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "ef1a2e33-db07-4bf0-9a0c-dd5375b78f7d",
+          "control-id": "CNSC-85",
+          "set-parameters": [
+            {
+              "param-id": "validate-target",
+              "values": [
+                "validate-catalog"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "0aad4717-7a01-48db-ac70-b6bee8b77726",
+              "description": "Repository component implements CNSC-85."
+            }
+          ],
+          "remarks": "Implementation of CNSC-85 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "cab48691-cb4d-45ce-a31a-0cbf80bbec91",
+          "control-id": "CNSC-150",
+          "set-parameters": [
+            {
+              "param-id": "dependency-file",
+              "values": [
+                "requirements.txt"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "d0db8d6c-0f86-4ef3-b367-e929f951a323",
+              "description": "Repository component implements CNSC-150."
+            }
+          ],
+          "remarks": "Implementation of CNSC-150 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "f314958b-5aa1-49c9-87af-983d412374a8",
+          "control-id": "CNSC-152",
+          "set-parameters": [
+            {
+              "param-id": "lock-file",
+              "values": [
+                "requirements.lock"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "ef344f5e-b38c-4679-bc6f-6837fe3fc5cf",
+              "description": "Repository component implements CNSC-152."
+            }
+          ],
+          "remarks": "Implementation of CNSC-152 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "67ffc9d7-321b-4634-9db9-65e5afa17700",
+          "control-id": "CNSC-153",
+          "set-parameters": [
+            {
+              "param-id": "hash-pin-pattern",
+              "values": [
+                "--require-hashes"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "23a02e6d-0ff4-46b2-8eab-e98bcc90d5f1",
+              "description": "Repository component implements CNSC-153."
+            }
+          ],
+          "remarks": "Implementation of CNSC-153 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "945c1bca-39b1-499a-afe6-049c0867aff7",
+          "control-id": "CNSC-154",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "f53a8ac6-429b-4855-916c-38af9bfe2a45",
+              "description": "Repository component implements CNSC-154."
+            }
+          ],
+          "remarks": "Implementation of CNSC-154 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "9d5b1a8a-2da9-4b09-9b11-23bf26e95361",
+          "control-id": "CNSC-155",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "7d9a2356-9626-4c5d-aab9-572a666360ac",
+              "description": "Repository component implements CNSC-155."
+            }
+          ],
+          "remarks": "Implementation of CNSC-155 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "fba52542-99c3-46eb-b35d-50043c865644",
+          "control-id": "CNSC-156",
+          "set-parameters": [
+            {
+              "param-id": "env-setup-target",
+              "values": [
+                "venv"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "e57b848b-f6d3-4d59-bdeb-32181c63c860",
+              "description": "Repository component implements CNSC-156."
+            }
+          ],
+          "remarks": "Implementation of CNSC-156 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "bde3be17-ed12-4fed-9b38-c6b9f9b54db2",
+          "control-id": "CNSC-158",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "623f85aa-2221-44c9-b58d-d7ed4a5a9c66",
+              "description": "Repository component implements CNSC-158."
+            }
+          ],
+          "remarks": "Implementation of CNSC-158 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "81507dcb-2a15-4954-ac0d-78f8c70ff88b",
+          "control-id": "CNSC-159",
+          "set-parameters": [
+            {
+              "param-id": "all-target",
+              "values": [
+                "all"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "83e3b451-e38d-42d8-bde8-9ac891991968",
+              "description": "Repository component implements CNSC-159."
+            }
+          ],
+          "remarks": "Implementation of CNSC-159 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "1beec565-3814-49ae-8931-c3df61940b0d",
+          "control-id": "CNSC-165",
+          "set-parameters": [
+            {
+              "param-id": "output-artifact-path",
+              "values": [
+                "trestle.ws/catalogs/cncf-controls/catalog.json"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "4d1f9f53-c1f5-4363-957d-d55ef50da96c",
+              "description": "Repository component implements CNSC-165."
+            }
+          ],
+          "remarks": "Implementation of CNSC-165 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "ce2f04ba-b3c6-45aa-a64b-4f7a67e1157a",
+          "control-id": "CNSC-166",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "2385bee3-1cbd-460d-a189-a38518216017",
+              "description": "Repository component implements CNSC-166."
+            }
+          ],
+          "remarks": "Implementation of CNSC-166 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "2655121c-457e-430a-aa9c-6cbf85514e77",
+          "control-id": "CNSC-167",
+          "set-parameters": [
+            {
+              "param-id": "codeowners-file",
+              "values": [
+                "CODEOWNERS"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "09ba6346-1850-4bd6-940d-37c4b192e169",
+              "description": "Repository component implements CNSC-167."
+            }
+          ],
+          "remarks": "Implementation of CNSC-167 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "3c129d64-8d20-4d62-a2f9-bd4dfa3ff588",
+          "control-id": "CNSC-168",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "f6377706-407e-4136-9f06-cb8c1228d9bc",
+              "description": "Repository component implements CNSC-168."
+            }
+          ],
+          "remarks": "Implementation of CNSC-168 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "7636d96e-4d58-4036-a748-e52cf856196c",
+          "control-id": "CNSC-173",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "7f75b8ca-377a-44ee-a6dc-381677ca8da4",
+              "description": "Repository component implements CNSC-173."
+            }
+          ],
+          "remarks": "Implementation of CNSC-173 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "5d7d9455-5f18-4377-9c2d-f2fb14bed234",
+          "control-id": "CNSC-174",
+          "set-parameters": [
+            {
+              "param-id": "sbom-output-path",
+              "values": [
+                "sbom.json"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "5b41e7ef-e06d-4e23-aff5-653dcb23c6da",
+              "description": "Repository component implements CNSC-174."
+            }
+          ],
+          "remarks": "Implementation of CNSC-174 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "b613c53f-e907-42fa-b507-4a997a5ce9dc",
+          "control-id": "CNSC-175",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "64358489-7ad2-4797-9b8d-b7928df03b27",
+              "description": "Repository component implements CNSC-175."
+            }
+          ],
+          "remarks": "Implementation of CNSC-175 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "65abbf60-d88b-4e68-b367-d1a17e21a7f9",
+          "control-id": "CNSC-177",
+          "set-parameters": [
+            {
+              "param-id": "trusted-registry-pattern",
+              "values": [
+                "pip install"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "b79509a1-e75f-4552-846d-1a953d3dd92b",
+              "description": "Repository component implements CNSC-177."
+            }
+          ],
+          "remarks": "Implementation of CNSC-177 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "3e8e2c6e-21db-41e0-97d0-ec3ed69984a1",
+          "control-id": "CNSC-178",
+          "set-parameters": [
+            {
+              "param-id": "sbom-target",
+              "values": [
+                "generate-sbom"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "eb9d6978-9546-4ac3-9fb2-961db83ca4bb",
+              "description": "Repository component implements CNSC-178."
+            }
+          ],
+          "remarks": "Implementation of CNSC-178 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "111476ab-f1dd-4e41-8f1d-b3efa2e8db0f",
+          "control-id": "CNSC-179",
+          "set-parameters": [
+            {
+              "param-id": "vulnerability-scanner",
+              "values": [
+                "pip-audit"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "253e20b4-5e6c-4eb8-8a77-55f556efa4a5",
+              "description": "Repository component implements CNSC-179."
+            }
+          ],
+          "remarks": "Implementation of CNSC-179 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "ac3f65be-b4c2-4743-affb-f3634b62378f",
+          "control-id": "CNSC-180",
+          "set-parameters": [
+            {
+              "param-id": "license-scan-target",
+              "values": [
+                "license-check"
+              ]
+            },
+            {
+              "param-id": "license-scanner",
+              "values": [
+                "pip-licenses"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "0ea3aca2-bea1-41ac-93ae-9c75a234cbde",
+              "description": "Repository component implements CNSC-180."
+            }
+          ],
+          "remarks": "Implementation of CNSC-180 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "5a271eea-ebae-473a-a606-8eda4441f293",
+          "control-id": "CNSC-181",
+          "set-parameters": [
+            {
+              "param-id": "sca-target",
+              "values": [
+                "sca"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "384485ab-9877-4396-bec8-8206e710a6d4",
+              "description": "Repository component implements CNSC-181."
+            }
+          ],
+          "remarks": "Implementation of CNSC-181 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "c7378206-c873-4027-92c1-0c63078274b1",
+          "control-id": "CNSC-182",
+          "set-parameters": [
+            {
+              "param-id": "signed-commits-lookback",
+              "values": [
+                "10"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "2a952bdd-0f7e-48b1-a58c-c162921f4a3c",
+              "description": "Repository component implements CNSC-182."
+            }
+          ],
+          "remarks": "Implementation of CNSC-182 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "b4ed1861-331e-4f2b-855e-df6eb857196e",
+          "control-id": "CNSC-183",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "a324705f-229d-4a67-a7d0-92c17350512a",
+              "description": "Repository component implements CNSC-183."
+            }
+          ],
+          "remarks": "Implementation of CNSC-183 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "412c3ad2-6c5b-4880-a8dd-41d97983ce26",
+          "control-id": "CNSC-184",
+          "set-parameters": [
+            {
+              "param-id": "secrets-scan-extensions",
+              "values": [
+                "py,sh,yaml,yml,env,cfg,ini"
+              ]
+            },
+            {
+              "param-id": "secrets-scan-exclude-paths",
+              "values": [
+                ".venv,trestle.ws,.git,download"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "0a20ffcf-3d56-4231-b6e0-4eaa8376db52",
+              "description": "Repository component implements CNSC-184."
+            }
+          ],
+          "remarks": "Implementation of CNSC-184 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "b57426ed-3a32-47f3-8f77-03c53e9a7368",
+          "control-id": "CNSC-185",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "21713447-e077-43f3-9d21-841c8f606c69",
+              "description": "Repository component implements CNSC-185."
+            }
+          ],
+          "remarks": "Implementation of CNSC-185 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "671a821d-be70-40e5-a999-8b641acc1b2d",
+          "control-id": "CNSC-186",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "bc2a495c-c19d-43b9-8ad2-3742b8025919",
+              "description": "Repository component implements CNSC-186."
+            }
+          ],
+          "remarks": "Implementation of CNSC-186 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "513c4ed5-56ce-4adb-9aed-3c0d83b6a02b",
+          "control-id": "CNSC-187",
+          "set-parameters": [
+            {
+              "param-id": "contributing-file",
+              "values": [
+                "CONTRIBUTING.md"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "cb7d35cf-db58-477c-8b8c-469febd187da",
+              "description": "Repository component implements CNSC-187."
+            }
+          ],
+          "remarks": "Implementation of CNSC-187 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "581b48b4-20d1-4adb-9a6f-8edbf029cedd",
+          "control-id": "CNSC-188",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "65b980d6-68f5-4b77-8b00-b49533c63427",
+              "description": "Repository component implements CNSC-188."
+            }
+          ],
+          "remarks": "Implementation of CNSC-188 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "ed5c25cb-989e-4eea-9b4e-fa485940a17d",
+          "control-id": "CNSC-189",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "0d5144b5-b14d-450a-b7ca-610f8ef8e95d",
+              "description": "Repository component implements CNSC-189."
+            }
+          ],
+          "remarks": "Implementation of CNSC-189 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "913ee3ce-14ec-4bf8-8b65-ea6af05c332b",
+          "control-id": "CNSC-190",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "7f4e51cc-5b80-438a-90fd-e27109ba250a",
+              "description": "Repository component implements CNSC-190."
+            }
+          ],
+          "remarks": "Implementation of CNSC-190 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "94d9c1be-7138-4ed5-abdf-5d1486793b1b",
+          "control-id": "CNSC-191",
+          "set-parameters": [
+            {
+              "param-id": "mfa-enforcement-scope",
+              "values": [
+                "organization"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "67166831-6212-434f-abfd-556a4c90c91d",
+              "description": "Repository component implements CNSC-191."
+            }
+          ],
+          "remarks": "Implementation of CNSC-191 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "6abe6c1e-dbb8-469d-bb67-e42cbea0fcfd",
+          "control-id": "CNSC-192",
+          "set-parameters": [
+            {
+              "param-id": "git-config-file",
+              "values": [
+                ".git/config"
+              ]
+            },
+            {
+              "param-id": "ssh-remote-pattern",
+              "values": [
+                "git@github\\.com"
+              ]
+            }
+          ],
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "cb34b551-7886-47a0-9037-d61041a07486",
+              "description": "Repository component implements CNSC-192."
+            }
+          ],
+          "remarks": "Implementation of CNSC-192 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "5593240e-09af-4e25-ae5b-0ff245d5881a",
+          "control-id": "CNSC-193",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "fdcce449-2f4c-497a-883a-07893e859e55",
+              "description": "Repository component implements CNSC-193."
+            }
+          ],
+          "remarks": "Implementation of CNSC-193 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "7ad9fbd9-54c4-41e5-b3cf-e89f3fb75792",
+          "control-id": "CNSC-194",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "24479402-bbbe-429b-ab11-ce2424e49cfe",
+              "description": "Repository component implements CNSC-194."
+            }
+          ],
+          "remarks": "Implementation of CNSC-194 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "f7faa753-d0fb-4819-84a0-ec05f0c3d927",
+          "control-id": "CNSC-121",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "9513a638-0f90-40c8-b16e-2419b0e5eb59",
+              "description": "Repository component implements CNSC-121."
+            }
+          ],
+          "remarks": "Implementation of CNSC-121 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "b6bb5284-4fa7-46ba-89ab-ee9ddb61fa49",
+          "control-id": "CNSC-196",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "7a25ade1-ff12-47d4-bb12-229c40de5321",
+              "description": "Repository component implements CNSC-196."
+            }
+          ],
+          "remarks": "Implementation of CNSC-196 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "e7a4f754-857a-49eb-9235-d625b09eeab4",
+          "control-id": "CNSC-197",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "dcb66083-f7c4-4e86-a785-c7cb6ceb46b0",
+              "description": "Repository component implements CNSC-197."
+            }
+          ],
+          "remarks": "Implementation of CNSC-197 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "d5c7b66c-db14-4d99-92ea-6a87cc5144c8",
+          "control-id": "CNSC-198",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "3f6b88c9-dfc1-4a62-b9b3-c19e7a2f316a",
+              "description": "Repository component implements CNSC-198."
+            }
+          ],
+          "remarks": "Implementation of CNSC-198 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "c33c2cbc-2910-4d5d-94a5-cdd06de6519e",
+          "control-id": "CNSC-199",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "05f201ca-b44c-462f-9e40-072843ddb0cb",
+              "description": "Repository component implements CNSC-199."
+            }
+          ],
+          "remarks": "Implementation of CNSC-199 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "96710795-65be-4d03-9e83-19e65b336315",
+          "control-id": "CNSC-200",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "b6c626c1-8762-4cdd-8e65-1956f8aa1afc",
+              "description": "Repository component implements CNSC-200."
+            }
+          ],
+          "remarks": "Implementation of CNSC-200 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "af8319de-ca34-4224-8e9d-d76ea074cfdb",
+          "control-id": "CNSC-201",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "2c636ed0-7b91-466f-87a5-f8368583b433",
+              "description": "Repository component implements CNSC-201."
+            }
+          ],
+          "remarks": "Implementation of CNSC-201 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "99d3ac25-0dfa-4f46-9b57-51be787e7ad9",
+          "control-id": "CNSC-202",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "881bfe7d-1f71-4df0-99e8-8e448419f8be",
+              "description": "Repository component implements CNSC-202."
+            }
+          ],
+          "remarks": "Implementation of CNSC-202 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "bb7837ec-35aa-4927-801f-7d0fd38c89de",
+          "control-id": "CNSC-203",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "93519165-688d-4ea1-ad41-b368cfe09fc4",
+              "description": "Repository component implements CNSC-203."
+            }
+          ],
+          "remarks": "Implementation of CNSC-203 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "dc544cee-8a46-4c92-9797-1c4b77a92f37",
+          "control-id": "CNSC-204",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "58a781e3-755b-4aab-811f-010dac03f921",
+              "description": "Repository component implements CNSC-204."
+            }
+          ],
+          "remarks": "Implementation of CNSC-204 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        },
+        {
+          "uuid": "3502ca43-f649-4698-aaf1-53d1550065db",
+          "control-id": "CNSC-205",
+          "by-components": [
+            {
+              "component-uuid": "4c0e29e1-f8ff-4040-85b0-c319123bf0a8",
+              "uuid": "2720fd5a-79aa-4fd1-bfb7-18f3ee1f0251",
+              "description": "Repository component implements CNSC-205."
+            }
+          ],
+          "remarks": "Implementation of CNSC-205 for repository oscal-compass-lab/cncf-controls. Parameter values reflect the actual repository structure."
+        }
+      ]
+    }
+  }
+}

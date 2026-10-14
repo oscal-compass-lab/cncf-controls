@@ -1,0 +1,142 @@
+---
+# Automated CNCF Controls assessment pipeline
+#
+# Triggers:
+#   schedule        — hourly, to catch external drift (new CVEs, config changes)
+#   workflow_dispatch — manual trigger; optionally pass a target `repo` to assess
+#                       a repo other than cncf-controls itself
+#
+# What it does:
+#   1. Checks out cncf-controls (the tooling hub)
+#   2. Optionally clones a target repo alongside it
+#   3. Runs the full make pipeline: venv → build-catalog → ... → assess-repo
+#   4. Commits updated assessments/<org>/<repo>/ output back to main
+#
+# Secrets required:
+#   GITHUB_TOKEN  — provided automatically by Actions (used for git push)
+#   GH_API_TOKEN  — optional PAT with repo:read scope; used by assess_repo.py
+#                   for the branch-protection API check (unauthenticated calls
+#                   are rate-limited to 60/hr, which a busy runner will exhaust)
+
+name: Assess Repository
+
+on:
+  schedule:
+    - cron: '0 * * * *'      # every hour — approximates push-triggered re-eval
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: >
+          Target GitHub repo to assess (owner/name).
+          Leave blank to assess this repo (cncf-controls) itself.
+        required: false
+        default: ''
+
+permissions:
+  contents: write            # needed to commit assessment results back to main
+
+jobs:
+  assess:
+    name: Run assessment
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # -----------------------------------------------------------------------
+      # 1. Check out the cncf-controls tooling hub
+      # -----------------------------------------------------------------------
+      - name: Checkout cncf-controls
+        uses: actions/checkout@v4
+        with:
+          path: cncf-controls
+
+      # -----------------------------------------------------------------------
+      # 2. Resolve target repo
+      #    - workflow_dispatch with a repo input  → clone that repo
+      #    - scheduled / no input                 → assess cncf-controls itself
+      # -----------------------------------------------------------------------
+      - name: Resolve target repo
+        id: target
+        run: |
+          INPUT="${{ github.event.inputs.repo }}"
+          if [ -n "$INPUT" ]; then
+            echo "repo=$INPUT" >> "$GITHUB_OUTPUT"
+            echo "repo_root=$GITHUB_WORKSPACE/target-repo" >> "$GITHUB_OUTPUT"
+            echo "clone=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "repo=${{ github.repository }}" >> "$GITHUB_OUTPUT"
+            echo "repo_root=$GITHUB_WORKSPACE/cncf-controls" >> "$GITHUB_OUTPUT"
+            echo "clone=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Clone target repo (if external)
+        if: steps.target.outputs.clone == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.target.outputs.repo }}
+          path: target-repo
+
+      # -----------------------------------------------------------------------
+      # 3. Set up Python — use the version in requirements.txt comments or 3.11
+      # -----------------------------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: cncf-controls/requirements.txt
+
+      # -----------------------------------------------------------------------
+      # 4. Build the full pipeline inside the cncf-controls workspace
+      # -----------------------------------------------------------------------
+      - name: Install dependencies
+        working-directory: cncf-controls
+        run: make venv
+
+      - name: Download CNCF YAML source files
+        working-directory: cncf-controls
+        run: make download-cncf-yaml
+
+      - name: Initialise trestle workspace
+        working-directory: cncf-controls
+        run: make trestle-init
+
+      - name: Build catalog → profile → comp-def (shared artefacts)
+        working-directory: cncf-controls
+        run: make validate-comp-def
+
+      - name: Create SSP + Assessment Plan for target repo
+        working-directory: cncf-controls
+        env:
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+        run: |
+          make create-ssp \
+            REPO_URL=https://github.com/${{ steps.target.outputs.repo }}
+
+      - name: Run assessment → write AR + badge
+        working-directory: cncf-controls
+        env:
+          GH_API_TOKEN: ${{ secrets.GH_API_TOKEN }}
+        run: |
+          make assess-repo \
+            REPO_ROOT=${{ steps.target.outputs.repo_root }}
+
+      # -----------------------------------------------------------------------
+      # 5. Commit updated assessments/ output back to main
+      #    Only commits if the badge or AR actually changed.
+      # -----------------------------------------------------------------------
+      - name: Commit assessment results
+        working-directory: cncf-controls
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add assessments/
+
+          if git diff --cached --quiet; then
+            echo "No changes to assessment results — nothing to commit."
+          else
+            REPO="${{ steps.target.outputs.repo }}"
+            git commit -m "chore: update assessment for ${REPO} [skip ci]"
+            git push
+          fi

@@ -6,6 +6,12 @@ VENV_DIR      := .venv
 PYTHON        := python3
 TRESTLE_WS    := trestle.ws
 
+# Override these on the command line to assess an external repo, e.g.:
+#   make create-ssp  REPO_URL=https://github.com/org/repo
+#   make assess-repo REPO_ROOT=/path/to/cloned/repo
+REPO_URL  :=
+REPO_ROOT := .
+
 CNCF_YAML_FILES := \
 	access.yaml \
 	cnsc-nist-800-53-mapping.yaml \
@@ -24,7 +30,7 @@ CNCF_YAML_FILES := \
 
 CNCF_YAML_TARGETS := $(addprefix $(DOWNLOAD_DIR)/,$(CNCF_YAML_FILES))
 
-.PHONY: venv install download-cncf-yaml clean-cncf-yaml clean-venv trestle-init clean-trestle build-catalog clean-catalog validate-catalog build-profile validate-profile update-readme all
+.PHONY: venv install download-cncf-yaml clean-cncf-yaml clean-venv trestle-init clean-trestle build-catalog clean-catalog validate-catalog build-profile validate-profile build-comp-def validate-comp-def create-ssp validate-ssp validate-assessment-plan assess-repo update-readme all
 
 ## venv: Create a Python virtual environment and install requirements.txt
 venv: $(VENV_DIR)/bin/activate
@@ -81,12 +87,39 @@ build-profile: build-catalog
 validate-profile: build-profile
 	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type profile --name cncf-repo
 
+## build-comp-def: Build the shared cncf-repo OSCAL component definition
+build-comp-def: validate-profile
+	$(VENV_DIR)/bin/python scripts/build_comp_def.py --trestle-ws $(TRESTLE_WS)
+
+## validate-comp-def: Validate the cncf-repo component definition with trestle
+validate-comp-def: build-comp-def
+	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type component-definition --name cncf-repo
+
+## create-ssp: Probe this repo and create the SSP and Assessment Plan
+create-ssp: validate-comp-def
+	$(VENV_DIR)/bin/python scripts/create_ssp.py --trestle-ws $(TRESTLE_WS) \
+		$(if $(REPO_URL),--repo-url $(REPO_URL),)
+
+## validate-ssp: Validate the SSP with trestle
+validate-ssp: create-ssp
+	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type system-security-plan --name cncf-controls
+
+## validate-assessment-plan: Validate the Assessment Plan with trestle
+validate-assessment-plan: create-ssp
+	cd $(TRESTLE_WS) && ../$(VENV_DIR)/bin/trestle validate --type assessment-plan --name cncf-controls
+
+## assess-repo: Run automated checks and write Assessment Results + badge
+assess-repo: validate-assessment-plan
+	$(VENV_DIR)/bin/python scripts/assess_repo.py --trestle-ws $(TRESTLE_WS) \
+		$(if $(REPO_ROOT),--repo-root $(REPO_ROOT),)
+
 ## update-readme: Regenerate the Mermaid chart and controls table in README.md
-update-readme: validate-profile
+update-readme: validate-comp-def
+
 	$(VENV_DIR)/bin/python scripts/update_readme.py --catalog $(TRESTLE_WS)/catalogs/cncf-controls/catalog.json --readme README.md
 
-## all: Run all steps — download, build catalog, validate, update README
-all: update-readme
+## all: Run all steps — download, build catalog, profile, comp-def, ssp, assess, update README
+all: assess-repo update-readme
 
 ## trestle-init: Create trestle.ws workspace directory and initialize it with trestle
 trestle-init: venv

@@ -1,0 +1,207 @@
+{
+  "assessment-plan": {
+    "uuid": "534c959f-8be7-479b-95f6-2a09269f7920",
+    "metadata": {
+      "title": "Assessment Plan — oscal-compass-lab/cncf-controls",
+      "last-modified": "2026-10-12T14:54:30.747+00:00",
+      "version": "1.0",
+      "oscal-version": "1.2.1"
+    },
+    "import-ssp": {
+      "href": "trestle://system-security-plans/cncf-controls/system-security-plan.json"
+    },
+    "reviewed-controls": {
+      "description": "All controls selected by the cncf-repo profile.",
+      "control-selections": [
+        {
+          "include-controls": [
+            {
+              "control-id": "CNSC-65"
+            },
+            {
+              "control-id": "CNSC-67"
+            },
+            {
+              "control-id": "CNSC-68"
+            },
+            {
+              "control-id": "CNSC-69"
+            },
+            {
+              "control-id": "CNSC-71"
+            },
+            {
+              "control-id": "CNSC-72"
+            },
+            {
+              "control-id": "CNSC-73"
+            },
+            {
+              "control-id": "CNSC-74"
+            },
+            {
+              "control-id": "CNSC-75"
+            },
+            {
+              "control-id": "CNSC-78"
+            },
+            {
+              "control-id": "CNSC-195"
+            },
+            {
+              "control-id": "CNSC-259"
+            },
+            {
+              "control-id": "CNSC-265"
+            },
+            {
+              "control-id": "CNSC-82"
+            },
+            {
+              "control-id": "CNSC-85"
+            },
+            {
+              "control-id": "CNSC-150"
+            },
+            {
+              "control-id": "CNSC-152"
+            },
+            {
+              "control-id": "CNSC-153"
+            },
+            {
+              "control-id": "CNSC-154"
+            },
+            {
+              "control-id": "CNSC-155"
+            },
+            {
+              "control-id": "CNSC-156"
+            },
+            {
+              "control-id": "CNSC-158"
+            },
+            {
+              "control-id": "CNSC-159"
+            },
+            {
+              "control-id": "CNSC-165"
+            },
+            {
+              "control-id": "CNSC-166"
+            },
+            {
+              "control-id": "CNSC-167"
+            },
+            {
+              "control-id": "CNSC-168"
+            },
+            {
+              "control-id": "CNSC-173"
+            },
+            {
+              "control-id": "CNSC-174"
+            },
+            {
+              "control-id": "CNSC-175"
+            },
+            {
+              "control-id": "CNSC-177"
+            },
+            {
+              "control-id": "CNSC-178"
+            },
+            {
+              "control-id": "CNSC-179"
+            },
+            {
+              "control-id": "CNSC-180"
+            },
+            {
+              "control-id": "CNSC-181"
+            },
+            {
+              "control-id": "CNSC-182"
+            },
+            {
+              "control-id": "CNSC-183"
+            },
+            {
+              "control-id": "CNSC-184"
+            },
+            {
+              "control-id": "CNSC-185"
+            },
+            {
+              "control-id": "CNSC-186"
+            },
+            {
+              "control-id": "CNSC-187"
+            },
+            {
+              "control-id": "CNSC-188"
+            },
+            {
+              "control-id": "CNSC-189"
+            },
+            {
+              "control-id": "CNSC-190"
+            },
+            {
+              "control-id": "CNSC-191"
+            },
+            {
+              "control-id": "CNSC-192"
+            },
+            {
+              "control-id": "CNSC-193"
+            },
+            {
+              "control-id": "CNSC-194"
+            },
+            {
+              "control-id": "CNSC-121"
+            },
+            {
+              "control-id": "CNSC-196"
+            },
+            {
+              "control-id": "CNSC-197"
+            },
+            {
+              "control-id": "CNSC-198"
+            },
+            {
+              "control-id": "CNSC-199"
+            },
+            {
+              "control-id": "CNSC-200"
+            },
+            {
+              "control-id": "CNSC-201"
+            },
+            {
+              "control-id": "CNSC-202"
+            },
+            {
+              "control-id": "CNSC-203"
+            },
+            {
+              "control-id": "CNSC-204"
+            },
+            {
+              "control-id": "CNSC-205"
+            }
+          ]
+        }
+      ]
+    },
+    "assessment-subjects": [
+      {
+        "type": "component",
+        "description": "The source code repository component.",
+        "include-all": {}
+      }
+    ]
+  }
+}
