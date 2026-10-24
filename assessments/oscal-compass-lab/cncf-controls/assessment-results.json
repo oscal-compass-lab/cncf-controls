@@ -1,14 +1,14 @@
 {
   "assessment-results": {
-    "uuid": "5cc4ec79-0788-4465-b77b-48eb163a61cc",
+    "uuid": "7d2ca1f7-f90a-42ec-80c4-63aa76dfea98",
     "metadata": {
       "title": "Assessment Results — https://github.com/oscal-compass-lab/cncf-controls",
-      "last-modified": "2026-10-24T01:13:46.494+00:00",
+      "last-modified": "2026-10-24T06:36:31.413+00:00",
       "version": "1.0",
       "oscal-version": "1.2.1",
       "parties": [
         {
-          "uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3",
+          "uuid": "80324760-85bc-4e89-be22-50f6827086ff",
           "type": "tool",
           "name": "assess_repo.py"
         }
@@ -19,11 +19,11 @@
     },
     "results": [
       {
-        "uuid": "26e8d6f3-ec04-454d-b195-7b354e3a86cc",
+        "uuid": "7882e2d5-98fc-4416-b34c-65e66a37443c",
         "title": "Automated Repository Assessment",
         "description": "Automated assessment of https://github.com/oscal-compass-lab/cncf-controls against the cncf-repo profile.",
-        "start": "2026-10-24T01:13:46.494+00:00",
-        "end": "2026-10-24T01:13:46.494+00:00",
+        "start": "2026-10-24T06:36:31.413+00:00",
+        "end": "2026-10-24T06:36:31.413+00:00",
         "reviewed-controls": {
           "control-selections": [
             {
@@ -211,7 +211,7 @@
         },
         "observations": [
           {
-            "uuid": "b725e379-9ed0-473e-801c-0aa578372721",
+            "uuid": "6b07da36-480d-4a5a-a785-b075cb15c999",
             "title": "Assessment of CNSC-65",
             "description": "Target 'audit-deps' not found in Makefile",
             "methods": [
@@ -220,10 +220,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "7ed852e1-00e3-4440-8dd2-a5755a7ee2e2",
+            "uuid": "55eb9580-f8b9-485d-95b0-53c29e00203b",
             "title": "Assessment of CNSC-67",
             "description": "Missing: tests",
             "methods": [
@@ -232,10 +232,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "2caae040-1939-4c6a-b8b3-1aef6dba2266",
+            "uuid": "053e2f56-ba6b-4677-bad8-7bd9e34138ce",
             "title": "Assessment of CNSC-68",
             "description": "Missing: tests",
             "methods": [
@@ -244,10 +244,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "d5061c5d-e901-47b8-a673-5aa8e5e6b895",
+            "uuid": "fca5f4d2-72b1-4816-b46a-936e2bc34645",
             "title": "Assessment of CNSC-69",
             "description": "Target 'test' not found in Makefile",
             "methods": [
@@ -256,10 +256,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "d0ff066f-7c99-422a-92de-8af027b5819e",
+            "uuid": "d69f9329-c83a-446a-84a0-0382ba44a992",
             "title": "Assessment of CNSC-71",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -268,10 +268,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "8cc30888-3b22-4070-97b2-f807bcf367c8",
+            "uuid": "0e1eba91-996a-4732-904e-cefce8e6daab",
             "title": "Assessment of CNSC-72",
             "description": "Found: Makefile",
             "methods": [
@@ -280,10 +280,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "5c370866-79d9-4399-9400-601936dd27c7",
+            "uuid": "2850f2fc-9d7d-48d9-b611-3c840c2704a5",
             "title": "Assessment of CNSC-73",
             "description": "Missing: tests",
             "methods": [
@@ -292,10 +292,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "e3f919a0-f034-4f71-b652-b8da04c5566d",
+            "uuid": "da78034b-e662-4039-b1f9-1dd4c5b90b77",
             "title": "Assessment of CNSC-74",
             "description": "Missing: tests",
             "methods": [
@@ -304,10 +304,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "3b8472c7-8f8f-4084-a786-49ab51ba032d",
+            "uuid": "2a2cad44-6296-40dd-a634-2d7daa4fd8f0",
             "title": "Assessment of CNSC-75",
             "description": "Missing: tests",
             "methods": [
@@ -316,10 +316,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "9cbf7c66-74c3-41bf-a5a4-42918f008275",
+            "uuid": "612de2e9-5384-4e45-a455-cdcfd90ecd19",
             "title": "Assessment of CNSC-78",
             "description": "Missing: THREAT_MODEL.md",
             "methods": [
@@ -328,10 +328,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "c87ce77b-af5e-44ee-b80a-2db13f8aa5ad",
+            "uuid": "6ce2f019-d9c7-4b03-b96d-8435f67b495d",
             "title": "Assessment of CNSC-195",
             "description": "Missing: SECURITY.md",
             "methods": [
@@ -340,10 +340,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "982222d6-6f24-43c9-b91f-628f4c7ecd7f",
+            "uuid": "80329348-c098-4f3d-85f8-9f8000c02b09",
             "title": "Assessment of CNSC-259",
             "description": "Target 'audit-deps' not found in Makefile",
             "methods": [
@@ -352,10 +352,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "e8abdc69-e6f3-43c2-9c25-cd474ce85000",
+            "uuid": "d95bfff0-7ac3-4582-a756-d35c2b36766c",
             "title": "Assessment of CNSC-265",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -364,10 +364,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "d4977047-c36b-43e9-81fa-06758c508c74",
+            "uuid": "c5ca9fb4-4d6b-4923-86a1-cd4390019b87",
             "title": "Assessment of CNSC-82",
             "description": "Target 'sast' not found in Makefile",
             "methods": [
@@ -376,10 +376,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "30306c36-df7e-4cd7-b85e-c9a30bf1631f",
+            "uuid": "755c5831-69ff-400a-9e4f-441f6fb1c371",
             "title": "Assessment of CNSC-85",
             "description": "Target 'validate-catalog' found in Makefile",
             "methods": [
@@ -388,10 +388,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "58fe2f7e-6b75-4fad-b489-ed1bd60a8139",
+            "uuid": "adf4bdd5-94b4-4987-9c30-a0f09cf0831b",
             "title": "Assessment of CNSC-150",
             "description": "Found: requirements.txt",
             "methods": [
@@ -400,10 +400,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "37d7e64e-0035-4364-b21f-b97ef01b8fa6",
+            "uuid": "2f205336-3c3c-48ff-b833-81089e0aa27c",
             "title": "Assessment of CNSC-152",
             "description": "Missing: requirements.lock",
             "methods": [
@@ -412,10 +412,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "3ec2a44b-a37f-47f8-aa9f-b95d5f580234",
+            "uuid": "040669e6-a0c0-44a2-b1d5-6712efe82202",
             "title": "Assessment of CNSC-153",
             "description": "Pattern not found in Makefile: --require-hashes",
             "methods": [
@@ -424,10 +424,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "c55d2fda-bfc0-46d6-b9da-37fec05273cf",
+            "uuid": "701f0532-44da-4574-bac2-2cc34abfcba1",
             "title": "Assessment of CNSC-154",
             "description": "Missing: requirements.lock",
             "methods": [
@@ -436,10 +436,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "468282a2-bf9c-4d66-ba08-88701a7d73af",
+            "uuid": "24db469a-508f-4a4a-9456-42bfb1f23932",
             "title": "Assessment of CNSC-155",
             "description": "Missing: requirements.lock",
             "methods": [
@@ -448,10 +448,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "666629cf-8464-43f5-ad85-66827a460f4b",
+            "uuid": "f029abd3-7331-4ceb-80d0-ee1e66caa4e9",
             "title": "Assessment of CNSC-156",
             "description": "Target 'venv' found in Makefile",
             "methods": [
@@ -460,10 +460,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "e245a69a-b7b0-47a7-80fe-a1554b4c90f1",
+            "uuid": "d5b75262-8671-419e-822c-5dbde8ccec35",
             "title": "Assessment of CNSC-158",
             "description": "Found: Makefile",
             "methods": [
@@ -472,10 +472,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "f789782b-a4da-42b3-925d-5255d5bc197c",
+            "uuid": "5704d51c-daa8-424c-b066-539917dfa2e7",
             "title": "Assessment of CNSC-159",
             "description": "Target 'all' found in Makefile",
             "methods": [
@@ -484,10 +484,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "7fa33128-1b93-427b-a50d-5f18719242b6",
+            "uuid": "4f9e4f0d-09e2-4524-8ad5-609aa8f267b5",
             "title": "Assessment of CNSC-165",
             "description": "Found: trestle.ws/catalogs/cncf-controls/catalog.json",
             "methods": [
@@ -496,10 +496,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "3bc43175-d353-4386-9127-c97f3642c571",
+            "uuid": "d44473b9-ecb1-4701-8d65-a8ea78e57eee",
             "title": "Assessment of CNSC-166",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -508,10 +508,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "53dc9724-81e1-4fa4-993d-6c051ce552da",
+            "uuid": "2049312a-0c4a-45fa-961b-ae4382ef9ae2",
             "title": "Assessment of CNSC-167",
             "description": "Missing: CODEOWNERS",
             "methods": [
@@ -520,10 +520,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "e1d1dfa4-b64e-4eef-a047-a801de5145cf",
+            "uuid": "64db36ad-2cee-4cc1-984d-3deccf05a1b8",
             "title": "Assessment of CNSC-168",
             "description": "Missing: SECURITY.md",
             "methods": [
@@ -532,10 +532,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "03ba0d92-9a6d-4095-9178-7e4925578e1d",
+            "uuid": "03af517b-fa0b-480b-bffb-c23a972fe920",
             "title": "Assessment of CNSC-173",
             "description": "Found: requirements.txt",
             "methods": [
@@ -544,10 +544,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "4e7a57c2-b88f-4b66-8bf6-3a579c9789bc",
+            "uuid": "9d218f7a-8de7-4a50-98c5-45cd104e4ddb",
             "title": "Assessment of CNSC-174",
             "description": "Missing: sbom.json",
             "methods": [
@@ -556,10 +556,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "a0d84d9b-7a6d-4869-9109-86ab251bfd33",
+            "uuid": "ed2aae0d-7444-46b4-8275-d6f436d0ca59",
             "title": "Assessment of CNSC-175",
             "description": "Found: requirements.txt",
             "methods": [
@@ -568,10 +568,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "8b7acca2-e3ec-4375-9b4d-a255c12c2608",
+            "uuid": "e8e20529-dba4-49e6-8ea7-68543f015ffc",
             "title": "Assessment of CNSC-177",
             "description": "Pattern found in Makefile: pip install",
             "methods": [
@@ -580,10 +580,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "3a930c61-506b-4777-a81d-21c98d394827",
+            "uuid": "bbefe3c7-5ebe-463f-905f-90271b62a4a0",
             "title": "Assessment of CNSC-178",
             "description": "Target 'generate-sbom' not found in Makefile",
             "methods": [
@@ -592,10 +592,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "2da4c1bc-1ac6-459e-b3ee-98f4adcba31c",
+            "uuid": "777f6e2a-229c-4128-8879-134f1a668429",
             "title": "Assessment of CNSC-179",
             "description": "Target 'audit-deps' not found in Makefile",
             "methods": [
@@ -604,10 +604,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "8f2c35d0-b96d-4da1-ab53-5f4485736e06",
+            "uuid": "e1011a5e-c302-4b86-8825-e12ea3a9115b",
             "title": "Assessment of CNSC-180",
             "description": "Target 'license-check' not found in Makefile",
             "methods": [
@@ -616,10 +616,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "8b0e67b7-6afd-49fc-9d0f-38c8d37709da",
+            "uuid": "0df69eb0-e527-493d-9d64-d187a32e8daa",
             "title": "Assessment of CNSC-181",
             "description": "Target 'sca' not found in Makefile",
             "methods": [
@@ -628,10 +628,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "adbec7d9-9662-4349-9dd0-370eae0dfc5f",
+            "uuid": "95c588b4-3fd2-4228-bab7-80fb11fc53bb",
             "title": "Assessment of CNSC-182",
             "description": "0/1 commits signed",
             "methods": [
@@ -640,10 +640,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "9f79b984-eb52-47bc-b912-a6eeb3b37b6b",
+            "uuid": "883669a8-911b-4d93-81d4-7843d183c5b5",
             "title": "Assessment of CNSC-183",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -652,10 +652,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "413cbb0b-6acf-4c20-86f8-acde45b5b32c",
+            "uuid": "6bae04a1-19cb-4871-8283-f091ae604a93",
             "title": "Assessment of CNSC-184",
             "description": "No hardcoded secrets detected",
             "methods": [
@@ -664,10 +664,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "d223c563-c940-4cc1-952b-7ebb6f7cdf65",
+            "uuid": "20d64acd-5579-4b0d-9bf5-ea2aed3189ec",
             "title": "Assessment of CNSC-185",
             "description": "Missing: CODEOWNERS",
             "methods": [
@@ -676,10 +676,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "dcc819b7-7d5c-4c8d-8133-52e0e1f13a2e",
+            "uuid": "57dbc3a0-3fa4-43d5-94c0-7ba4be7488c1",
             "title": "Assessment of CNSC-186",
             "description": "Target 'sast' not found in Makefile",
             "methods": [
@@ -688,10 +688,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "bdd97530-7c41-40de-8f76-9004c38497cd",
+            "uuid": "0f12cbb8-1f77-46c6-826f-223b77ab07c0",
             "title": "Assessment of CNSC-187",
             "description": "Missing: CONTRIBUTING.md",
             "methods": [
@@ -700,10 +700,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "1a9b1657-1daa-4eac-81a2-cf4b86d52d30",
+            "uuid": "62300041-b006-4376-98c8-348367721572",
             "title": "Assessment of CNSC-188",
             "description": "Missing: CODEOWNERS",
             "methods": [
@@ -712,10 +712,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "93c2f2f1-b2bd-465f-9de7-622eb9bbcade",
+            "uuid": "b3bb6f2f-a676-414f-a7e0-04cb87e7910d",
             "title": "Assessment of CNSC-189",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -724,10 +724,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "68d43f8d-71bb-4736-a19c-e14b5950b47a",
+            "uuid": "8012bd8d-a18c-4ce3-846c-a25f8aaa18a3",
             "title": "Assessment of CNSC-190",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -736,10 +736,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "328eadbb-b97c-43c2-a658-cbd8c6cd16d5",
+            "uuid": "97033f67-0052-456f-a472-ee1e0c33f637",
             "title": "Assessment of CNSC-191",
             "description": "Manual check — cannot be automated.",
             "methods": [
@@ -748,10 +748,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "157c99be-508f-4fc4-bc32-88e90a5988e0",
+            "uuid": "94baf82b-c084-4eed-a653-82ad91de8198",
             "title": "Assessment of CNSC-192",
             "description": "Pattern not found in .git/config: git@github\\.com",
             "methods": [
@@ -760,10 +760,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "329f1f0d-bd24-4f01-8eb7-e71ec1855e9e",
+            "uuid": "b53125b6-b30f-4686-a402-0af3f1e83129",
             "title": "Assessment of CNSC-193",
             "description": "Missing: SECURITY.md",
             "methods": [
@@ -772,10 +772,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "2d36aff0-17c8-41ba-a820-cdac26105509",
+            "uuid": "da3e2c3a-9c2c-4593-ac5e-efc56620598c",
             "title": "Assessment of CNSC-194",
             "description": "Missing: SECURITY.md",
             "methods": [
@@ -784,10 +784,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "23cb846a-ccfb-4b25-beec-f8a6c5e985e0",
+            "uuid": "17b014d0-4209-4b31-add6-5cebe99c64c5",
             "title": "Assessment of CNSC-121",
             "description": "Missing: THREAT_MODEL.md",
             "methods": [
@@ -796,10 +796,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "70a60982-41f6-41dd-80b5-ade18e56e2cf",
+            "uuid": "63219591-5db4-41f9-ab0b-26fbe327343c",
             "title": "Assessment of CNSC-196",
             "description": "Missing: requirements.lock",
             "methods": [
@@ -808,10 +808,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "5c5b763a-18e3-4996-8297-952b57949b0f",
+            "uuid": "c3a459c7-a811-4aa9-bad7-b48bd7d6751b",
             "title": "Assessment of CNSC-197",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -820,10 +820,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "5b0c2b57-83ac-40ee-8b88-9a6bb8627322",
+            "uuid": "19d3ab05-effd-4bae-8b9b-16258f7a7661",
             "title": "Assessment of CNSC-198",
             "description": "No hardcoded secrets detected",
             "methods": [
@@ -832,10 +832,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "4137be0e-5d9c-4757-9982-78081a596c2b",
+            "uuid": "564f3508-d5cc-45e3-b420-5eaa9e07c8a6",
             "title": "Assessment of CNSC-199",
             "description": "0/1 commits signed",
             "methods": [
@@ -844,10 +844,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "55d03c42-08e7-40e5-87f6-9e858b1c8624",
+            "uuid": "ec4fe061-dba6-47e6-9e8f-bd8c9a3be440",
             "title": "Assessment of CNSC-200",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -856,10 +856,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "1fce652f-ca7c-49eb-9160-fd74ef308d3f",
+            "uuid": "eeae6ca9-8b25-4119-ae3a-ae18b48059ea",
             "title": "Assessment of CNSC-201",
             "description": "Branch 'main' protected=False",
             "methods": [
@@ -868,10 +868,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "72741391-76db-4b83-a687-13df6bc833c1",
+            "uuid": "a179e534-0ad0-4da8-b7d6-d66ae621228a",
             "title": "Assessment of CNSC-202",
             "description": "Manual check — cannot be automated.",
             "methods": [
@@ -880,10 +880,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "dab10882-1989-41cf-8c22-4e0d5bb68410",
+            "uuid": "d3d101ca-f5c4-4d3a-8db9-443a8d577b93",
             "title": "Assessment of CNSC-203",
             "description": "Missing: SECURITY.md",
             "methods": [
@@ -892,10 +892,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "a01b68b1-4a45-4806-9a17-3075f8647344",
+            "uuid": "29eaba53-71c7-4214-8128-a867ccfa181e",
             "title": "Assessment of CNSC-204",
             "description": "Manual check — cannot be automated.",
             "methods": [
@@ -904,10 +904,10 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           },
           {
-            "uuid": "3bb869d8-bcd5-4a40-8fec-bc2aae133338",
+            "uuid": "9684dc40-471a-46ee-9034-89dbd2484599",
             "title": "Assessment of CNSC-205",
             "description": "Manual check — cannot be automated.",
             "methods": [
@@ -916,12 +916,12 @@
             "types": [
               "finding"
             ],
-            "collected": "2026-10-24T01:13:46.494+00:00"
+            "collected": "2026-10-24T06:36:31.413+00:00"
           }
         ],
         "findings": [
           {
-            "uuid": "fee141dd-da30-4f7c-9bb2-73cc5d2925b6",
+            "uuid": "4de09151-1101-4b06-b64b-11db956f4b40",
             "title": "CNSC-65 — not-satisfied",
             "description": "Target 'audit-deps' not found in Makefile",
             "origins": [
@@ -929,7 +929,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -943,12 +943,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "b725e379-9ed0-473e-801c-0aa578372721"
+                "observation-uuid": "6b07da36-480d-4a5a-a785-b075cb15c999"
               }
             ]
           },
           {
-            "uuid": "29cf21ac-75d6-493b-bffe-910c3c2f347e",
+            "uuid": "fadf65f4-333a-4e09-9d8c-a294bc8ba93b",
             "title": "CNSC-67 — not-satisfied",
             "description": "Missing: tests",
             "origins": [
@@ -956,7 +956,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -970,12 +970,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "7ed852e1-00e3-4440-8dd2-a5755a7ee2e2"
+                "observation-uuid": "55eb9580-f8b9-485d-95b0-53c29e00203b"
               }
             ]
           },
           {
-            "uuid": "8ce23503-c3fc-443f-af85-516c6934d58c",
+            "uuid": "0f610625-3449-4873-8c8d-c115bf1374d8",
             "title": "CNSC-68 — not-satisfied",
             "description": "Missing: tests",
             "origins": [
@@ -983,7 +983,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -997,12 +997,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "2caae040-1939-4c6a-b8b3-1aef6dba2266"
+                "observation-uuid": "053e2f56-ba6b-4677-bad8-7bd9e34138ce"
               }
             ]
           },
           {
-            "uuid": "744676b7-947e-4642-86ad-d318d00999c9",
+            "uuid": "159c2ac8-324e-4298-a514-4cc19b8d3737",
             "title": "CNSC-69 — not-satisfied",
             "description": "Target 'test' not found in Makefile",
             "origins": [
@@ -1010,7 +1010,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1024,12 +1024,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "d5061c5d-e901-47b8-a673-5aa8e5e6b895"
+                "observation-uuid": "fca5f4d2-72b1-4816-b46a-936e2bc34645"
               }
             ]
           },
           {
-            "uuid": "9bcc8575-4ffb-4245-a468-735dc1292fea",
+            "uuid": "111c8f46-f6ab-458b-bd35-34b12e5a8973",
             "title": "CNSC-71 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -1037,7 +1037,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1051,12 +1051,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "d0ff066f-7c99-422a-92de-8af027b5819e"
+                "observation-uuid": "d69f9329-c83a-446a-84a0-0382ba44a992"
               }
             ]
           },
           {
-            "uuid": "1c673f70-5ad6-4e65-8b3a-00adc745a636",
+            "uuid": "8f9549d4-60a8-4faf-ba50-d326bcdfbb78",
             "title": "CNSC-72 — satisfied",
             "description": "Found: Makefile",
             "origins": [
@@ -1064,7 +1064,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1078,12 +1078,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "8cc30888-3b22-4070-97b2-f807bcf367c8"
+                "observation-uuid": "0e1eba91-996a-4732-904e-cefce8e6daab"
               }
             ]
           },
           {
-            "uuid": "ee5be523-2c97-4ed3-b325-0d024988db7a",
+            "uuid": "8eb85c35-2e7b-4d64-9eed-3d2b5f80fd38",
             "title": "CNSC-73 — not-satisfied",
             "description": "Missing: tests",
             "origins": [
@@ -1091,7 +1091,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1105,12 +1105,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "5c370866-79d9-4399-9400-601936dd27c7"
+                "observation-uuid": "2850f2fc-9d7d-48d9-b611-3c840c2704a5"
               }
             ]
           },
           {
-            "uuid": "6c073ba4-34d9-4023-a23a-a3d450583d27",
+            "uuid": "98cc3f93-ad9b-4e2b-9320-2f81545e6f8c",
             "title": "CNSC-74 — not-satisfied",
             "description": "Missing: tests",
             "origins": [
@@ -1118,7 +1118,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1132,12 +1132,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "e3f919a0-f034-4f71-b652-b8da04c5566d"
+                "observation-uuid": "da78034b-e662-4039-b1f9-1dd4c5b90b77"
               }
             ]
           },
           {
-            "uuid": "3c94e26f-bd90-4c31-8753-120e6d0891f4",
+            "uuid": "20029a86-0a5b-466b-bd81-83dc8cf505a7",
             "title": "CNSC-75 — not-satisfied",
             "description": "Missing: tests",
             "origins": [
@@ -1145,7 +1145,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1159,12 +1159,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "3b8472c7-8f8f-4084-a786-49ab51ba032d"
+                "observation-uuid": "2a2cad44-6296-40dd-a634-2d7daa4fd8f0"
               }
             ]
           },
           {
-            "uuid": "8edc3ab6-c02b-49ed-9d6d-c3a9d4b142ab",
+            "uuid": "d85472a7-b8df-45fd-b8fd-3a01e74e0c28",
             "title": "CNSC-78 — not-satisfied",
             "description": "Missing: THREAT_MODEL.md",
             "origins": [
@@ -1172,7 +1172,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1186,12 +1186,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "9cbf7c66-74c3-41bf-a5a4-42918f008275"
+                "observation-uuid": "612de2e9-5384-4e45-a455-cdcfd90ecd19"
               }
             ]
           },
           {
-            "uuid": "159728b6-f84f-4064-a532-8fcfb8a086b7",
+            "uuid": "1310a65c-f163-4090-982a-2a499cbf8956",
             "title": "CNSC-195 — not-satisfied",
             "description": "Missing: SECURITY.md",
             "origins": [
@@ -1199,7 +1199,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1213,12 +1213,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "c87ce77b-af5e-44ee-b80a-2db13f8aa5ad"
+                "observation-uuid": "6ce2f019-d9c7-4b03-b96d-8435f67b495d"
               }
             ]
           },
           {
-            "uuid": "d02a7377-9b3b-4d18-a334-95a860c3e71d",
+            "uuid": "6f76280f-3ee1-456c-b589-c56aa46c3c92",
             "title": "CNSC-259 — not-satisfied",
             "description": "Target 'audit-deps' not found in Makefile",
             "origins": [
@@ -1226,7 +1226,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1240,12 +1240,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "982222d6-6f24-43c9-b91f-628f4c7ecd7f"
+                "observation-uuid": "80329348-c098-4f3d-85f8-9f8000c02b09"
               }
             ]
           },
           {
-            "uuid": "473bc832-edf0-4e5f-a703-04dd7f22e10d",
+            "uuid": "e3619488-ab81-4a89-bf59-d29989f3e45e",
             "title": "CNSC-265 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -1253,7 +1253,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1267,12 +1267,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "e8abdc69-e6f3-43c2-9c25-cd474ce85000"
+                "observation-uuid": "d95bfff0-7ac3-4582-a756-d35c2b36766c"
               }
             ]
           },
           {
-            "uuid": "1287522f-26c7-4f30-82da-e91197804ba1",
+            "uuid": "b044385b-a25a-4b94-9ff3-1ecbb942d834",
             "title": "CNSC-82 — not-satisfied",
             "description": "Target 'sast' not found in Makefile",
             "origins": [
@@ -1280,7 +1280,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1294,12 +1294,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "d4977047-c36b-43e9-81fa-06758c508c74"
+                "observation-uuid": "c5ca9fb4-4d6b-4923-86a1-cd4390019b87"
               }
             ]
           },
           {
-            "uuid": "99fc1113-b1af-432c-ada6-3f6e06de55a3",
+            "uuid": "49347a62-6336-43df-a913-e0b369f7098c",
             "title": "CNSC-85 — satisfied",
             "description": "Target 'validate-catalog' found in Makefile",
             "origins": [
@@ -1307,7 +1307,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1321,12 +1321,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "30306c36-df7e-4cd7-b85e-c9a30bf1631f"
+                "observation-uuid": "755c5831-69ff-400a-9e4f-441f6fb1c371"
               }
             ]
           },
           {
-            "uuid": "226c9fe3-2c9b-49ea-9a78-705b6997b400",
+            "uuid": "f269b86e-cc57-416a-899e-a4ea9a7da0bb",
             "title": "CNSC-150 — satisfied",
             "description": "Found: requirements.txt",
             "origins": [
@@ -1334,7 +1334,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1348,12 +1348,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "58fe2f7e-6b75-4fad-b489-ed1bd60a8139"
+                "observation-uuid": "adf4bdd5-94b4-4987-9c30-a0f09cf0831b"
               }
             ]
           },
           {
-            "uuid": "2819b5bd-b277-47e8-b4ba-126ff8e33483",
+            "uuid": "9b174bbe-a891-4fb6-879f-27b8d53fa360",
             "title": "CNSC-152 — not-satisfied",
             "description": "Missing: requirements.lock",
             "origins": [
@@ -1361,7 +1361,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1375,12 +1375,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "37d7e64e-0035-4364-b21f-b97ef01b8fa6"
+                "observation-uuid": "2f205336-3c3c-48ff-b833-81089e0aa27c"
               }
             ]
           },
           {
-            "uuid": "326d2b5b-49e1-4e2a-8f22-386907438f79",
+            "uuid": "fe4d69da-d6b0-4ee9-8836-bb5d1ce326d5",
             "title": "CNSC-153 — not-satisfied",
             "description": "Pattern not found in Makefile: --require-hashes",
             "origins": [
@@ -1388,7 +1388,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1402,12 +1402,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "3ec2a44b-a37f-47f8-aa9f-b95d5f580234"
+                "observation-uuid": "040669e6-a0c0-44a2-b1d5-6712efe82202"
               }
             ]
           },
           {
-            "uuid": "6cf48d07-6c5f-4218-9a6d-9e09d3a55695",
+            "uuid": "ef7d2b47-9982-4289-9c30-9b93e59a55db",
             "title": "CNSC-154 — not-satisfied",
             "description": "Missing: requirements.lock",
             "origins": [
@@ -1415,7 +1415,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1429,12 +1429,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "c55d2fda-bfc0-46d6-b9da-37fec05273cf"
+                "observation-uuid": "701f0532-44da-4574-bac2-2cc34abfcba1"
               }
             ]
           },
           {
-            "uuid": "a651aa97-97f1-401a-934e-d1331d528b69",
+            "uuid": "2f391ab6-f3fd-4283-8a7a-3d09c2403ec0",
             "title": "CNSC-155 — not-satisfied",
             "description": "Missing: requirements.lock",
             "origins": [
@@ -1442,7 +1442,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1456,12 +1456,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "468282a2-bf9c-4d66-ba08-88701a7d73af"
+                "observation-uuid": "24db469a-508f-4a4a-9456-42bfb1f23932"
               }
             ]
           },
           {
-            "uuid": "ace603ed-107c-4e7d-bd4a-e988157cf012",
+            "uuid": "b827be8a-9837-4b2c-9c4a-3ca6b0cab701",
             "title": "CNSC-156 — satisfied",
             "description": "Target 'venv' found in Makefile",
             "origins": [
@@ -1469,7 +1469,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1483,12 +1483,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "666629cf-8464-43f5-ad85-66827a460f4b"
+                "observation-uuid": "f029abd3-7331-4ceb-80d0-ee1e66caa4e9"
               }
             ]
           },
           {
-            "uuid": "ffdd1062-6d7d-4ebe-b9a1-06a8f493a2d5",
+            "uuid": "a22eec69-4271-4d82-a74d-4a166a3a5dd2",
             "title": "CNSC-158 — satisfied",
             "description": "Found: Makefile",
             "origins": [
@@ -1496,7 +1496,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1510,12 +1510,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "e245a69a-b7b0-47a7-80fe-a1554b4c90f1"
+                "observation-uuid": "d5b75262-8671-419e-822c-5dbde8ccec35"
               }
             ]
           },
           {
-            "uuid": "ec593d53-a14a-4939-b04d-569b788588dc",
+            "uuid": "8e11e45f-6193-4d0c-a561-f1ee22a081fc",
             "title": "CNSC-159 — satisfied",
             "description": "Target 'all' found in Makefile",
             "origins": [
@@ -1523,7 +1523,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1537,12 +1537,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "f789782b-a4da-42b3-925d-5255d5bc197c"
+                "observation-uuid": "5704d51c-daa8-424c-b066-539917dfa2e7"
               }
             ]
           },
           {
-            "uuid": "b5695d07-a78b-4f86-9812-d1eec7e3026b",
+            "uuid": "db84b7ba-15f2-4d74-9570-e2cc877cbe64",
             "title": "CNSC-165 — satisfied",
             "description": "Found: trestle.ws/catalogs/cncf-controls/catalog.json",
             "origins": [
@@ -1550,7 +1550,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1564,12 +1564,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "7fa33128-1b93-427b-a50d-5f18719242b6"
+                "observation-uuid": "4f9e4f0d-09e2-4524-8ad5-609aa8f267b5"
               }
             ]
           },
           {
-            "uuid": "1b0302c5-0850-497e-96c8-b1c94307d374",
+            "uuid": "5034a0b9-1141-4679-a93c-dac21306c0c3",
             "title": "CNSC-166 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -1577,7 +1577,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1591,12 +1591,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "3bc43175-d353-4386-9127-c97f3642c571"
+                "observation-uuid": "d44473b9-ecb1-4701-8d65-a8ea78e57eee"
               }
             ]
           },
           {
-            "uuid": "2db94541-522e-420d-81b4-39ab1e2b5c6e",
+            "uuid": "42b61424-6a7a-4fd9-8038-34600a1613ca",
             "title": "CNSC-167 — not-satisfied",
             "description": "Missing: CODEOWNERS",
             "origins": [
@@ -1604,7 +1604,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1618,12 +1618,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "53dc9724-81e1-4fa4-993d-6c051ce552da"
+                "observation-uuid": "2049312a-0c4a-45fa-961b-ae4382ef9ae2"
               }
             ]
           },
           {
-            "uuid": "89c3d0d3-a231-453d-83df-3bb63e8504c1",
+            "uuid": "5db8f901-ae8f-46ba-bb57-07433a5e0149",
             "title": "CNSC-168 — not-satisfied",
             "description": "Missing: SECURITY.md",
             "origins": [
@@ -1631,7 +1631,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1645,12 +1645,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "e1d1dfa4-b64e-4eef-a047-a801de5145cf"
+                "observation-uuid": "64db36ad-2cee-4cc1-984d-3deccf05a1b8"
               }
             ]
           },
           {
-            "uuid": "2fca0024-30d6-4926-bda7-c7c8f8c226be",
+            "uuid": "8d2a9a64-06bb-4867-b391-0b66469532e4",
             "title": "CNSC-173 — satisfied",
             "description": "Found: requirements.txt",
             "origins": [
@@ -1658,7 +1658,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1672,12 +1672,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "03ba0d92-9a6d-4095-9178-7e4925578e1d"
+                "observation-uuid": "03af517b-fa0b-480b-bffb-c23a972fe920"
               }
             ]
           },
           {
-            "uuid": "df9a4f61-ee19-4623-94a0-868c3c5ea828",
+            "uuid": "4ee78a73-76ee-4c18-81f0-0013206ed5be",
             "title": "CNSC-174 — not-satisfied",
             "description": "Missing: sbom.json",
             "origins": [
@@ -1685,7 +1685,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1699,12 +1699,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "4e7a57c2-b88f-4b66-8bf6-3a579c9789bc"
+                "observation-uuid": "9d218f7a-8de7-4a50-98c5-45cd104e4ddb"
               }
             ]
           },
           {
-            "uuid": "43a5b2b8-61c3-4656-a6c6-cc6bc4d6918f",
+            "uuid": "334e2aca-d09e-4d3f-aebe-b1ffb2035f1e",
             "title": "CNSC-175 — satisfied",
             "description": "Found: requirements.txt",
             "origins": [
@@ -1712,7 +1712,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1726,12 +1726,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "a0d84d9b-7a6d-4869-9109-86ab251bfd33"
+                "observation-uuid": "ed2aae0d-7444-46b4-8275-d6f436d0ca59"
               }
             ]
           },
           {
-            "uuid": "3bb6951f-e3f1-45a1-821f-81a2d4224cc1",
+            "uuid": "6b86f2b6-890a-4475-9d33-badcf7cc1ae1",
             "title": "CNSC-177 — satisfied",
             "description": "Pattern found in Makefile: pip install",
             "origins": [
@@ -1739,7 +1739,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1753,12 +1753,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "8b7acca2-e3ec-4375-9b4d-a255c12c2608"
+                "observation-uuid": "e8e20529-dba4-49e6-8ea7-68543f015ffc"
               }
             ]
           },
           {
-            "uuid": "e53f8060-a6a0-4b3e-9e46-6ed89fca0d68",
+            "uuid": "9721deae-a904-4d6c-bf48-436485eb41d2",
             "title": "CNSC-178 — not-satisfied",
             "description": "Target 'generate-sbom' not found in Makefile",
             "origins": [
@@ -1766,7 +1766,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1780,12 +1780,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "3a930c61-506b-4777-a81d-21c98d394827"
+                "observation-uuid": "bbefe3c7-5ebe-463f-905f-90271b62a4a0"
               }
             ]
           },
           {
-            "uuid": "bc9369b7-56ec-4b27-91f7-2a199ecf3524",
+            "uuid": "a9eeafd3-170a-45af-85e4-e667d9176659",
             "title": "CNSC-179 — not-satisfied",
             "description": "Target 'audit-deps' not found in Makefile",
             "origins": [
@@ -1793,7 +1793,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1807,12 +1807,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "2da4c1bc-1ac6-459e-b3ee-98f4adcba31c"
+                "observation-uuid": "777f6e2a-229c-4128-8879-134f1a668429"
               }
             ]
           },
           {
-            "uuid": "772a100c-30b9-4cc6-a9d0-7c4fde6daa8f",
+            "uuid": "19199763-88a8-4b61-8011-afd11f8851be",
             "title": "CNSC-180 — not-satisfied",
             "description": "Target 'license-check' not found in Makefile",
             "origins": [
@@ -1820,7 +1820,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1834,12 +1834,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "8f2c35d0-b96d-4da1-ab53-5f4485736e06"
+                "observation-uuid": "e1011a5e-c302-4b86-8825-e12ea3a9115b"
               }
             ]
           },
           {
-            "uuid": "de05511b-0e62-49a0-8273-147d1cf7d6b9",
+            "uuid": "7c762280-d83e-4e1d-b357-b3769ef252ff",
             "title": "CNSC-181 — not-satisfied",
             "description": "Target 'sca' not found in Makefile",
             "origins": [
@@ -1847,7 +1847,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1861,12 +1861,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "8b0e67b7-6afd-49fc-9d0f-38c8d37709da"
+                "observation-uuid": "0df69eb0-e527-493d-9d64-d187a32e8daa"
               }
             ]
           },
           {
-            "uuid": "8a8070ae-a991-41a5-9d77-c05d18c56f7a",
+            "uuid": "a4bb9fba-ae0b-4129-91ea-24e649c0a692",
             "title": "CNSC-182 — not-satisfied",
             "description": "0/1 commits signed",
             "origins": [
@@ -1874,7 +1874,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1888,12 +1888,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "adbec7d9-9662-4349-9dd0-370eae0dfc5f"
+                "observation-uuid": "95c588b4-3fd2-4228-bab7-80fb11fc53bb"
               }
             ]
           },
           {
-            "uuid": "2cb0ad40-ed91-4164-b967-aaf7a526410e",
+            "uuid": "90aef7f4-5b04-4311-98d2-a99f9cdb888e",
             "title": "CNSC-183 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -1901,7 +1901,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1915,12 +1915,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "9f79b984-eb52-47bc-b912-a6eeb3b37b6b"
+                "observation-uuid": "883669a8-911b-4d93-81d4-7843d183c5b5"
               }
             ]
           },
           {
-            "uuid": "0a4303e0-5ca7-4bff-b8c2-f24bd8b0b924",
+            "uuid": "b2a8fd89-312c-4d01-af6f-bb9c643bfc8a",
             "title": "CNSC-184 — satisfied",
             "description": "No hardcoded secrets detected",
             "origins": [
@@ -1928,7 +1928,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1942,12 +1942,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "413cbb0b-6acf-4c20-86f8-acde45b5b32c"
+                "observation-uuid": "6bae04a1-19cb-4871-8283-f091ae604a93"
               }
             ]
           },
           {
-            "uuid": "be4ebe58-99b4-4fc2-a8b6-b4a83fce8c08",
+            "uuid": "08e45e62-9fa1-4c62-821e-5c6b33d0b9d2",
             "title": "CNSC-185 — not-satisfied",
             "description": "Missing: CODEOWNERS",
             "origins": [
@@ -1955,7 +1955,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1969,12 +1969,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "d223c563-c940-4cc1-952b-7ebb6f7cdf65"
+                "observation-uuid": "20d64acd-5579-4b0d-9bf5-ea2aed3189ec"
               }
             ]
           },
           {
-            "uuid": "efb56c1c-24c5-44b3-a322-4a1d66913e44",
+            "uuid": "42c285fa-98bd-4160-a079-a2566c419a5d",
             "title": "CNSC-186 — not-satisfied",
             "description": "Target 'sast' not found in Makefile",
             "origins": [
@@ -1982,7 +1982,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -1996,12 +1996,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "dcc819b7-7d5c-4c8d-8133-52e0e1f13a2e"
+                "observation-uuid": "57dbc3a0-3fa4-43d5-94c0-7ba4be7488c1"
               }
             ]
           },
           {
-            "uuid": "1398cd7b-cf45-44e3-a1b2-5e5dc4cd5d43",
+            "uuid": "67a0a45d-3605-4ee8-b1f8-bdb2524bf94c",
             "title": "CNSC-187 — not-satisfied",
             "description": "Missing: CONTRIBUTING.md",
             "origins": [
@@ -2009,7 +2009,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2023,12 +2023,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "bdd97530-7c41-40de-8f76-9004c38497cd"
+                "observation-uuid": "0f12cbb8-1f77-46c6-826f-223b77ab07c0"
               }
             ]
           },
           {
-            "uuid": "6668ca94-94fa-4da1-851c-2de6dc129f7d",
+            "uuid": "44a5d26d-66ce-4919-a4ab-9e72948e998f",
             "title": "CNSC-188 — not-satisfied",
             "description": "Missing: CODEOWNERS",
             "origins": [
@@ -2036,7 +2036,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2050,12 +2050,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "1a9b1657-1daa-4eac-81a2-cf4b86d52d30"
+                "observation-uuid": "62300041-b006-4376-98c8-348367721572"
               }
             ]
           },
           {
-            "uuid": "a776b91e-f115-47a0-aa6a-ab1bd5bb0d2e",
+            "uuid": "6cb5f00c-2c4c-4c1f-a4ea-a0974a01bcca",
             "title": "CNSC-189 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -2063,7 +2063,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2077,12 +2077,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "93c2f2f1-b2bd-465f-9de7-622eb9bbcade"
+                "observation-uuid": "b3bb6f2f-a676-414f-a7e0-04cb87e7910d"
               }
             ]
           },
           {
-            "uuid": "84d6c664-8ad3-48b4-85cf-731d5d0f86a1",
+            "uuid": "a7caf7e5-05b2-4501-a884-f090e6c2d5f6",
             "title": "CNSC-190 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -2090,7 +2090,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2104,12 +2104,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "68d43f8d-71bb-4736-a19c-e14b5950b47a"
+                "observation-uuid": "8012bd8d-a18c-4ce3-846c-a25f8aaa18a3"
               }
             ]
           },
           {
-            "uuid": "c1453edb-951d-4ea5-b46d-f0c7f1ba38e4",
+            "uuid": "5407e7a6-9310-4830-aba8-6312578e7508",
             "title": "CNSC-191 — not-satisfied",
             "description": "Manual check — cannot be automated.",
             "origins": [
@@ -2117,7 +2117,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2131,12 +2131,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "328eadbb-b97c-43c2-a658-cbd8c6cd16d5"
+                "observation-uuid": "97033f67-0052-456f-a472-ee1e0c33f637"
               }
             ]
           },
           {
-            "uuid": "e071568d-3e9d-4a3b-bd89-ce7279f44ed6",
+            "uuid": "f6880708-a1e2-4df1-abe1-5e85be88ab8e",
             "title": "CNSC-192 — not-satisfied",
             "description": "Pattern not found in .git/config: git@github\\.com",
             "origins": [
@@ -2144,7 +2144,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2158,12 +2158,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "157c99be-508f-4fc4-bc32-88e90a5988e0"
+                "observation-uuid": "94baf82b-c084-4eed-a653-82ad91de8198"
               }
             ]
           },
           {
-            "uuid": "d651e932-953e-4429-bd8f-82c2cebcad8e",
+            "uuid": "e224167c-ce64-4e01-b22e-89056f3fb061",
             "title": "CNSC-193 — not-satisfied",
             "description": "Missing: SECURITY.md",
             "origins": [
@@ -2171,7 +2171,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2185,12 +2185,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "329f1f0d-bd24-4f01-8eb7-e71ec1855e9e"
+                "observation-uuid": "b53125b6-b30f-4686-a402-0af3f1e83129"
               }
             ]
           },
           {
-            "uuid": "f51b688a-ab6a-4920-a70b-4a8b19f8d596",
+            "uuid": "e993122c-9e61-4e05-ae25-5f5ebd7f459e",
             "title": "CNSC-194 — not-satisfied",
             "description": "Missing: SECURITY.md",
             "origins": [
@@ -2198,7 +2198,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2212,12 +2212,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "2d36aff0-17c8-41ba-a820-cdac26105509"
+                "observation-uuid": "da3e2c3a-9c2c-4593-ac5e-efc56620598c"
               }
             ]
           },
           {
-            "uuid": "bbc4a69f-15ee-43fc-835e-8fc45401fea8",
+            "uuid": "6e88f744-f8fa-4101-bec8-b413cada344f",
             "title": "CNSC-121 — not-satisfied",
             "description": "Missing: THREAT_MODEL.md",
             "origins": [
@@ -2225,7 +2225,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2239,12 +2239,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "23cb846a-ccfb-4b25-beec-f8a6c5e985e0"
+                "observation-uuid": "17b014d0-4209-4b31-add6-5cebe99c64c5"
               }
             ]
           },
           {
-            "uuid": "a778151a-865c-4297-9568-1c23cd7782b6",
+            "uuid": "6a4a1fca-8e00-4c14-8996-cdaa038254e0",
             "title": "CNSC-196 — not-satisfied",
             "description": "Missing: requirements.lock",
             "origins": [
@@ -2252,7 +2252,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2266,12 +2266,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "70a60982-41f6-41dd-80b5-ade18e56e2cf"
+                "observation-uuid": "63219591-5db4-41f9-ab0b-26fbe327343c"
               }
             ]
           },
           {
-            "uuid": "858fe7fa-733f-480e-917f-d2e6229e95f0",
+            "uuid": "860f65e5-4750-44b1-b111-b96e53eff133",
             "title": "CNSC-197 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -2279,7 +2279,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2293,12 +2293,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "5c5b763a-18e3-4996-8297-952b57949b0f"
+                "observation-uuid": "c3a459c7-a811-4aa9-bad7-b48bd7d6751b"
               }
             ]
           },
           {
-            "uuid": "8ecbb058-1726-4e9a-9a8d-22d7d8d3edff",
+            "uuid": "eb34ca23-74c5-4d8a-8166-81565dc1799a",
             "title": "CNSC-198 — satisfied",
             "description": "No hardcoded secrets detected",
             "origins": [
@@ -2306,7 +2306,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2320,12 +2320,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "5b0c2b57-83ac-40ee-8b88-9a6bb8627322"
+                "observation-uuid": "19d3ab05-effd-4bae-8b9b-16258f7a7661"
               }
             ]
           },
           {
-            "uuid": "768c4177-3c97-4ea7-9a01-72df0ed823a7",
+            "uuid": "515567ff-dbc2-4588-8007-b9269e48c2b2",
             "title": "CNSC-199 — not-satisfied",
             "description": "0/1 commits signed",
             "origins": [
@@ -2333,7 +2333,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2347,12 +2347,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "4137be0e-5d9c-4757-9982-78081a596c2b"
+                "observation-uuid": "564f3508-d5cc-45e3-b420-5eaa9e07c8a6"
               }
             ]
           },
           {
-            "uuid": "f02d403d-2e7f-4b85-918e-d1735c80788f",
+            "uuid": "b04c9fc9-ffe2-4cf5-aa3b-726a509427f6",
             "title": "CNSC-200 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -2360,7 +2360,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2374,12 +2374,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "55d03c42-08e7-40e5-87f6-9e858b1c8624"
+                "observation-uuid": "ec4fe061-dba6-47e6-9e8f-bd8c9a3be440"
               }
             ]
           },
           {
-            "uuid": "4059c0e8-206c-4a3e-86a0-70827f510af8",
+            "uuid": "2efbde1c-04bd-4dad-8c90-a7126032e28e",
             "title": "CNSC-201 — not-satisfied",
             "description": "Branch 'main' protected=False",
             "origins": [
@@ -2387,7 +2387,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2401,12 +2401,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "1fce652f-ca7c-49eb-9160-fd74ef308d3f"
+                "observation-uuid": "eeae6ca9-8b25-4119-ae3a-ae18b48059ea"
               }
             ]
           },
           {
-            "uuid": "7f1a67eb-4c0a-4f4d-8517-b8d60eb6b097",
+            "uuid": "82d683f6-58ff-4ee4-925b-6952ad57e7dc",
             "title": "CNSC-202 — not-satisfied",
             "description": "Manual check — cannot be automated.",
             "origins": [
@@ -2414,7 +2414,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2428,12 +2428,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "72741391-76db-4b83-a687-13df6bc833c1"
+                "observation-uuid": "a179e534-0ad0-4da8-b7d6-d66ae621228a"
               }
             ]
           },
           {
-            "uuid": "76fccb64-d845-4c8b-9004-3aa1f807b5e9",
+            "uuid": "fba89881-5dd9-4f42-84f7-c7531060c2ec",
             "title": "CNSC-203 — not-satisfied",
             "description": "Missing: SECURITY.md",
             "origins": [
@@ -2441,7 +2441,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2455,12 +2455,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "dab10882-1989-41cf-8c22-4e0d5bb68410"
+                "observation-uuid": "d3d101ca-f5c4-4d3a-8db9-443a8d577b93"
               }
             ]
           },
           {
-            "uuid": "c984e223-cc1a-4160-b0dc-b7e5225faadc",
+            "uuid": "d05f671c-d578-4465-915d-e7e85506edbe",
             "title": "CNSC-204 — not-satisfied",
             "description": "Manual check — cannot be automated.",
             "origins": [
@@ -2468,7 +2468,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2482,12 +2482,12 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "a01b68b1-4a45-4806-9a17-3075f8647344"
+                "observation-uuid": "29eaba53-71c7-4214-8128-a867ccfa181e"
               }
             ]
           },
           {
-            "uuid": "79ffce77-a1c4-43da-82a6-9f429a250baf",
+            "uuid": "a33612c0-7f1c-41f8-98ee-a2905874d41b",
             "title": "CNSC-205 — not-satisfied",
             "description": "Manual check — cannot be automated.",
             "origins": [
@@ -2495,7 +2495,7 @@
                 "actors": [
                   {
                     "type": "tool",
-                    "actor-uuid": "6830c228-ddb6-49c0-ae6c-1ec0c3121ee3"
+                    "actor-uuid": "80324760-85bc-4e89-be22-50f6827086ff"
                   }
                 ]
               }
@@ -2509,7 +2509,7 @@
             },
             "related-observations": [
               {
-                "observation-uuid": "3bb869d8-bcd5-4a40-8fec-bc2aae133338"
+                "observation-uuid": "9684dc40-471a-46ee-9034-89dbd2484599"
               }
             ]
           }
