@@ -1,6 +1,7 @@
 # cncf-controls OSCAL
 
-OSCAL Catalog built from the [CNCF TAG Security and Compliance](https://github.com/cncf/contribute-site/tree/main/docs/community/tags/security-and-compliance/publications/controls-catalog) controls catalog.
+OSCAL Catalog built from the [CNCF TAG Security and Compliance <img src="icons/external-link.svg" alt="(external link)" width="12" height="12">](https://github.com/cncf/contribute-site/tree/main/docs/community/tags/security-and-compliance/publications/controls-catalog) controls catalog.
+
 Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cncf-controls/catalog.json)
 
 ## Catalog Overview
