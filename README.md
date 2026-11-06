@@ -6,7 +6,7 @@ Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cnc
 
 ## Catalog Overview
 
-214 controls across 11 groups, mapped to NIST SP 800-53 Rev. 5.
+214 controls across 11 groups. 176 of them are mapped to NIST SP 800-53 Rev. 5, using the mapping published in the [CNCF contribute-site controls-catalog <img src="icons/external-link.svg" alt="(external link)" width="12" height="12">](https://github.com/cncf/contribute-site/tree/main/docs/community/tags/security-and-compliance/publications/controls-catalog/catalog) (`cnsc-nist-800-53-mapping.yaml`).
 
 <!-- chart-start -->
 
