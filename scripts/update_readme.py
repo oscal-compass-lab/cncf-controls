@@ -65,7 +65,7 @@ def load_groups(catalog_path: Path) -> list[dict]:
 def generate_chart(groups: list[dict], chart_path: Path) -> None:
     """Render a horizontal bar chart and save it as a PNG."""
     titles = [g["title"] for g in groups]
-    counts = [len(g["controls"]) for g in groups]
+    counts = [len(g["mapped"]) for g in groups]
     colours = [COLOURS[i % len(COLOURS)] for i in range(len(groups))]
 
     # Reverse so the first group appears at the top
@@ -88,8 +88,8 @@ def generate_chart(groups: list[dict], chart_path: Path) -> None:
             color="#333333",
         )
 
-    ax.set_xlabel("Number of Controls", fontsize=10)
-    ax.set_title("CNCF Controls Catalog — Controls per Group", fontsize=12, fontweight="bold", pad=14)
+    ax.set_xlabel("Number of Controls Mapped to NIST SP 800-53", fontsize=10)
+    ax.set_title("CNCF Controls Catalog — Mapped Controls per Group", fontsize=12, fontweight="bold", pad=14)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
     ax.set_xlim(0, max(counts) + 6)
@@ -106,7 +106,7 @@ def generate_chart(groups: list[dict], chart_path: Path) -> None:
 def build_chart_md(chart_path: Path, readme_path: Path) -> str:
     """Return the markdown image tag using a path relative to the README."""
     rel = chart_path.relative_to(readme_path.parent) if chart_path.is_relative_to(readme_path.parent) else chart_path
-    return f"![Controls per Group]({rel})"
+    return f"![Mapped Controls per Group]({rel})"
 
 
 def build_table(groups: list[dict]) -> str:

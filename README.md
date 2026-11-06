@@ -10,7 +10,7 @@ Output: [trestle.ws/catalogs/cncf-controls/catalog.json](trestle.ws/catalogs/cnc
 
 <!-- chart-start -->
 
-![Controls per Group](docs/catalog-chart.png)
+![Mapped Controls per Group](docs/catalog-chart.png)
 
 <!-- chart-end -->
 
