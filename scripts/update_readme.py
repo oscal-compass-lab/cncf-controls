@@ -39,14 +39,25 @@ COLOURS = [
 ]
 
 
+def _has_nist_mapping(control: dict) -> bool:
+    """True if the control has at least one NIST SP 800-53 link."""
+    return any("NIST.SP.800-53" in link.get("href", "") for link in control.get("links", []))
+
+
 def load_groups(catalog_path: Path) -> list[dict]:
-    """Return [{title, controls: [id, ...]}, ...] from the catalog."""
+    """Return [{title, controls, mapped, unmapped}, ...] from the catalog.
+
+    Each of controls / mapped / unmapped is a list of control ids.
+    """
     data = json.loads(catalog_path.read_text(encoding="utf-8"))
     groups = []
     for g in data["catalog"]["groups"]:
+        controls = g.get("controls", [])
         groups.append({
             "title": g["title"],
-            "controls": [c["id"] for c in g.get("controls", [])],
+            "controls": [c["id"] for c in controls],
+            "mapped": [c["id"] for c in controls if _has_nist_mapping(c)],
+            "unmapped": [c["id"] for c in controls if not _has_nist_mapping(c)],
         })
     return groups
 
@@ -100,13 +111,19 @@ def build_chart_md(chart_path: Path, readme_path: Path) -> str:
 
 def build_table(groups: list[dict]) -> str:
     total = sum(len(g["controls"]) for g in groups)
+    total_mapped = sum(len(g["mapped"]) for g in groups)
+    total_unmapped = sum(len(g["unmapped"]) for g in groups)
     rows = []
-    rows.append("| Group | Count | Controls |")
-    rows.append("|---|:---:|---|")
+    rows.append("| Group | Count | Mapped | Unmapped | Mapped controls | Unmapped controls |")
+    rows.append("|---|:---:|:---:|:---:|---|---|")
     for g in groups:
-        ctrl_ids = ", ".join(g["controls"])
-        rows.append(f"| {g['title']} | {len(g['controls'])} | {ctrl_ids} |")
-    rows.append(f"| **Total** | **{total}** | |")
+        mapped_ids = ", ".join(g["mapped"]) or "-"
+        unmapped_ids = ", ".join(g["unmapped"]) or "-"
+        rows.append(
+            f"| {g['title']} | {len(g['controls'])} | {len(g['mapped'])} | {len(g['unmapped'])} "
+            f"| {mapped_ids} | {unmapped_ids} |"
+        )
+    rows.append(f"| **Total** | **{total}** | **{total_mapped}** | **{total_unmapped}** | | |")
     return "\n".join(rows)
 
 
